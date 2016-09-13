@@ -18,7 +18,6 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-            new TFox\MpdfPortBundle\TFoxMpdfPortBundle(),
 
             new AppBundle\AppBundle(),
         ];
