@@ -1,0 +1,332 @@
+{% extends '@App/layout.html.twig' %}
+
+{% block content %}
+
+    {# Сдайдер #}
+    <div class="gradient row slider-top" style="padding-bottom: 20px;">
+        <div class="hidden-xs hidden-sm col-md-5">
+            <img src="{{ asset('bundles/app/images/slider--0.png') }}" style="max-width: 100%; margin-top: 50px"/>
+        </div>
+        <div class="col-xs-12 cl-sm-12 col-md-7">
+            <div class="title">ПРИВЕТСТВУЕМ ВАС <br />НА НАШЕМ САЙТЕ!</div>
+            <p>
+                Проверить, являетесь ли Вы должником по исполнительному производству легко можно на
+                официальном сайте ФССП России.
+                <br />
+                Ссылка на сайт <a href="http://r77.fssplus.ru" target="_blank">http://r77.fssplus.ru</a>
+                <br />
+                ПОМНИТЕ - мы стоим на страже законов и интересов Должника. Поэтому все советы, <br />
+                которые мы даем - это советы, как уйти от ответственности за невозврат - Кредита, Долга. <br />
+                И как уберечь свою Собственность.
+            </p>
+            <br />
+            <br />
+        </div>
+    </div>
+    <div class="line"></div>
+
+    <div class="row">
+        <div class="text-center title col-xs-12">Как мы работаем</div>
+        <div class="col-sm-offset-1 col-xs-12 col-sm-10">
+            <p class="text-center" style="margin-bottom: 20px">
+                Главный результат, который мы гарантируем - это возврат Вашего спокойствия. В жизни наших клиентов
+                появляется ясночть и уверенность в завтрашнем дне без страха и беспокойства со стороны судебных
+                приставов. Работаем с честными людьми, которые попали в трудную ситуацию. Не работаем с мошенниками!
+            </p>
+        </div>
+    </div>
+    <div class="row block-1">
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+            <img src="{{ asset('bundles/app/images/icon-1.png') }}">
+            <h3>
+                Изучаем вашу проблему
+            </h3>
+            <div class="desc">
+                Знакомимся с материалами
+                исполнительного производства, анализируем уже принятые приставом меры, выявляем недостатки в работе ФССП
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+            <img src="{{ asset('bundles/app/images/icon-2.png') }}">
+            <h3>
+                Изучаем вашу проблему
+            </h3>
+            <div class="desc">
+                Знакомимся с материалами
+                исполнительного производства, анализируем уже принятые приставом меры, выявляем недостатки в работе ФССП
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+            <img src="{{ asset('bundles/app/images/icon-3.png') }}">
+            <h3>
+                Изучаем вашу проблему
+            </h3>
+            <div class="desc">
+                Знакомимся с материалами
+                исполнительного производства, анализируем уже принятые приставом меры, выявляем недостатки в работе ФССП
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <img src="{{ asset('bundles/app/images/big-line.png') }}" class="big-line">
+    </div>
+    <div class="block-2">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <div class="text-center" style="font-size: 18px">
+                    Переведем звонки на себя. <br />
+                    Вас больше не потреожат
+                </div>
+                <br />
+                <br />
+                <br />
+                <strong>СРОК</strong>
+                <br />
+                <br />
+                <img src="{{ asset('bundles/app/images/circle-1.png') }}" alt="24 часа">
+                <br />
+                <strong>часа</strong>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <div class="text-center" style="font-size: 18px">
+                    Подготовим все документы<br />
+                    Для разбирательства <br />
+                    без Вашего участия.
+                </div>
+                <br />
+                <br />
+                <strong>СРОК</strong>
+                <br />
+                <br />
+                <img src="{{ asset('bundles/app/images/circle-2.png') }}" alt="1-2 дня">
+                <br />
+                <strong>дня</strong>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <div class="text-center" style="font-size: 18px">
+                    Достижения результата<br />
+                    согласно утвержденному<br />
+                    плану и закондатательству
+                </div>
+                <br />
+                <br />
+                <strong>СРОК</strong>
+                <br />
+                <br />
+                <img src="{{ asset('bundles/app/images/circle-2.png') }}" alt="1-2 месяца">
+                <br />
+                <strong>мнсяца</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-3 gradient">
+        <div class="title black text-center">Опасности для должника</div>
+        <div class="row">
+            <div class="col-md-offset-2 col-sm-offset-1 col-xs-12  col-sm-10 col-md-8">
+                <ul>
+                    <li>Суд может наложить арест на имущество должника и наложить запреты на регистрационные действия в отношении Вашей собственности</li>
+                    <li>Пристав - может начать процедуру изъятия собственности у должника и передачу или реализацию этой собственности с соответствии с Судебныым решением.</li>
+                    <li>Пристав - может возбудить уголовное преследование Должника - за злостное уклонение от исполнения судебного решения.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-4">
+        <div class="title black text-center">Преимущества</div>
+        <br />
+        <div class="col-md-offset-2 col-sm-offset-1 col-xs-12  col-sm-10 col-md-8">
+            <div class="t-2">
+                С Нашим участием менее 10%
+                судебных решений, на стадии исполнительного производства по
+                имущественным спорам успешно исполняются
+            </div>
+            <div class="t-1">
+                Надежность.
+                Банкротство "под ключ".
+                Собственные арбитражные управляющие в штате компании
+            </div>
+            <div class="t-3">
+                Все шансы того, что исполнение
+                производство будет прекращено
+                без взыскания, в связи с отсутствием имущества
+            </div>
+            <div class="t-4">
+                Часть наших услуг возможно оплатить по результату выполненых работ
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <img src="{{ asset('bundles/app/images/big-line-6.png') }}" class="big-line">
+    <br />
+    <br />
+    <div class="block-5 slider-2">
+        <div class="title white text-center">Почему мы?</div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-offset-2 col-sm-offset-1 col-xs-12  col-sm-10 col-md-8">
+                <ul class="white" style="font-size: 18px">
+                    <li>Вы избавитесь от необходимости общения со службой судебных приставов</li>
+                    <li>У нас большой опыт по предоставлению интересов клиентов в исполнительном производстве</li>
+                    <li>С нашей помощью Вы гораздо быстрее сможете уберечь свое имущество от незаконных действий приставов</li>
+                    <li>Гарантия качества услуг. Мы гарантируем положительный результат.</li>
+                </ul>
+            </div>
+        </div>
+        <br />
+        <br />
+    </div>
+    <div class="block-7">
+        <div class="row">
+            <div class="col-md-offset-2 col-sm-offset-1 col-xs-12  col-sm-10 col-md-8" style="font-size: 18px; line-height: 24px">
+                <span class="title" style="padding:0">Н</span>аша компания работает с 1990 года. За это время прошли все этапы развития
+                бизнеса в России. Наша компания имеет известность в своей сфере т общественное признаниеклиентов.
+                В настоящее время с нами работают большое количество адвокатов и арбитражных управляющих. Наша компания
+                занимается оказанием услуг по защите прав и интересов граждан, попавших в сложную финансовую ситуацию, а также
+                предоставляют услуги по предотвращению и противодействию направленных на противозаконный захват Вашего
+                имущества, то есть одно из направлений нашей деятельности - защита должников и правовая помощь
+                собственникам. На протяжении всей деятельности кампании наш девиз "Помогать людям!".
+                <br />
+                Наша компания работает как Скорая помощь"
+            </div>
+        </div>
+    </div>
+    <div class="block-8 gradient">
+        <div class="title black text-center">Наши услуги</div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <img src="{{ asset('bundles/app/images/img-e-3.png') }}" class="img-e" />
+                <br />
+                <div>
+                    Представление Ваших интересов<br />
+                    в исполнительном производстве
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <img src="{{ asset('bundles/app/images/img-e-2.png') }}" class="img-e">
+                <br />
+                <div>
+                    Снятие запретов<br />
+                    на регистрационные действия<br />
+                    автомобиля
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <img src="{{ asset('bundles/app/images/img-e-1.png') }}" class="img-e">
+                <br />
+                <div>
+                    Обжалование действий/<br />
+                    бездействия<br />
+                    судебный приставов-исполнителей
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <img src="{{ asset('bundles/app/images/img-e-4.png') }}" class="img-e">
+                <br />
+                <div>
+                    В итоге мы решим Вашу проблему путем<br />
+                    Вашего банкротства согласно законадательству.<br />
+                    Законадательство на стороне должника.
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <img src="{{ asset('bundles/app/images/img-e-5.png') }}" class="img-e">
+                <br />
+                <div>
+                    Отсрочка и рассрочка<br />
+                    исполнительных судебных решений<br />
+                    изменение способа<br />
+                    и порядка их исполнения
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <img src="{{ asset('bundles/app/images/img-e-6.png') }}" class="img-e">
+                <br />
+                <div>
+                    Освобождение имущества<br />
+                    от ареста
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                <img src="{{ asset('bundles/app/images/img-e-7.png') }}" class="img-e">
+                <br />
+                <div>
+                    Взыскание ущерба,<br />
+                    причиненного действиями<br />
+                    судебных приставов-исполнителей
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <img src="{{ asset('bundles/app/images/big-line-8.png') }}" class="big-line">
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=dg8LmQTzaZJcXKe_HG4la9KvJZdWRiAA&amp;width=100%&amp;height=558&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    </div>
+    <img src="{{ asset('bundles/app/images/big-line-9.png') }}" class="big-line" style="margin-top: 30px">
+    <div class="block-10 news">
+        {#<img src="{{ asset('bundles/app/images/news-tmp.png') }}" style="max-width: 100%">#}
+        <div class="tch"></div>
+        <div class="title green text-center">Новости</div>
+
+        {% for n in news %}
+            <div class="row new-item">
+                <div class="col-xs-3">
+                    {% if n.preview.path is defined %}
+                        <img src="{{ n.preview.path }}" class="img-responsive">
+                    {% endif %}
+                </div>
+                <div class="col-xs-8  new">
+                    <img src="{{ asset('bundles/app/images/ug-1.png') }}" class="ug-1">
+                    <b>{{ n.title }}</b>
+                    <p>{{ n.body | raw }}</p>
+                    <img src="{{ asset('bundles/app/images/ug-2.png') }}" class="ug-2">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="block-11 gradient-img">
+        <img src="{{ asset('bundles/app/images/big-line-11.png') }}" class="big-line">
+        <div class="text-center">
+            <div class="title black text-center">Обратная связь</div>
+            <form method="POST" class="text-center">
+                <div class="row">
+                    <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
+                        <input type="text" placeholder="Как Вас зовут">
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
+                        <input type="tel" placeholder="Телефон для связи">
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
+                        <textarea placeholder="Текст Обращения"></textarea>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
+                        <button class="btn btn-primary">ОТПРАВИТЬ</button>
+                    </div>
+                </div>
+            </form>
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+{% endblock %}

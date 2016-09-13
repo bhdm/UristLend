@@ -1,0 +1,50 @@
+{% extends "AppBundle::admin_layout.html.twig" %}
+
+{% block breadcrumb %}
+    <ul class="breadcrumb well">
+        <li><a href="{{ path('admin_main') }}">Домой</a> <span class="divider"></span></li>
+        <li class="active"><a href="{{ path('admin_publication_list') }}">Контент</a> <span class="divider"></span></li>
+        <div style="float: right">
+            <a href="{{ path('admin_content_add') }}">Добавить</a> <span class="divider"></span>
+        </div>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <div class="well">
+        <table class="table">
+            <tr>
+                <th>№</th>
+                <th>Заголовок</th>
+                <th></th>
+                <th class="setting">Инструменты</th>
+            </tr>
+            {% for item in pagination %}
+                <tr>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.title }}</td>
+                    <td></td>
+                    <td class="setting">
+                        {% spaceless %}
+                        <a href="{{ path('admin_content_edit',{'id' : item.id}) }}">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </button>
+                        </a>
+                            &nbsp;
+                            &nbsp;
+                        <a href="#" data-href="{{ path('admin_content_remove',{'id' : item.id}) }}" class="remove" data-toggle="modal" data-target="#confirm-delete">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </a>
+                        {% endspaceless %}
+                    </td>
+                </tr>
+            {% endfor%}
+        </table>
+        <div class="navigation">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+    </div>
+{% endblock %}
