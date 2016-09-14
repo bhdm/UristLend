@@ -16,13 +16,35 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
 
+        $post = false;
+        if ($request->getMethod() == 'POST'){
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Запрос сайта')
+                ->setFrom('urist@urist.ru')
+                ->setTo('bhd.m@ya.ru')
+                ->setBody(
+                    $this->renderView(
+                        '@App/registration.html.twig',
+                        array(
+                            'name' => $request->request->get('name'),
+                            'phone' => $request->request->get('phone'),
+                            'text' => $request->request->get('text'),
+                        )
+                    ),
+                    'text/html'
+                );
+                $this->get('mailer')->send($message);
+
+
+            $post = true;
+        }
         $contents = $this->getDoctrine()->getRepository('AppBundle:Content')->findAll();
         $content = [];
         foreach ($contents as $k => $v){
             $content[$v->getId()] = $v->getBody();
         }
-        $news = $this->getDoctrine()->getRepository('AppBundle:Publication')->findBy([],['id' => 'DESC'],3);
-        return $this->render('AppBundle:Default:index.html.twig', ['news' => $news, 'content' => $content]);
+        $news = $this->getDoctrine()->getRepository('AppBundle:Publication')->findBy([],['id' => 'DESC'],4);
+        return $this->render('AppBundle:Default:index.html.twig', ['news' => $news, 'content' => $content, 'post' => $post]);
     }
 
     /**

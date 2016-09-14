@@ -297,7 +297,10 @@
     <div class="map" id="contacts">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=dg8LmQTzaZJcXKe_HG4la9KvJZdWRiAA&amp;width=100%&amp;height=558&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
     </div>
-    <img src="{{ asset('bundles/app/images/big-line-9.png') }}" class="big-line" style="margin-top: 30px">
+    <div class="text-center">
+        <img src="{{ asset('bundles/app/images/big-line-9.png') }}" class="big-line" style="margin: 30px; max-width: 220px">
+        <div class="phone">8 <span class="green">495</span> 799 72 93</div>
+    </div>
     <div class="block-10 news" id="news">
         {#<img src="{{ asset('bundles/app/images/news-tmp.png') }}" style="max-width: 100%">#}
         <div class="tch"></div>
@@ -326,25 +329,25 @@
             <form method="POST" class="text-center">
                 <div class="row">
                     <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
-                        <input type="text" placeholder="Как Вас зовут">
+                        <input type="text" placeholder="Как Вас зовут" name="name" required>
                     </div>
                 </div>
                 <br />
                 <div class="row">
                     <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
-                        <input type="tel" placeholder="Телефон для связи">
+                        <input type="tel" placeholder="Телефон для связи" name="phone" required>
                     </div>
                 </div>
                 <br />
                 <div class="row">
                     <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
-                        <textarea placeholder="Текст Обращения"></textarea>
+                        <textarea placeholder="Текст Обращения" name="text" required></textarea>
                     </div>
                 </div>
                 <br />
                 <div class="row">
                     <div class="col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-8 col-md-4">
-                        <button class="btn btn-primary">ОТПРАВИТЬ</button>
+                        <button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
                     </div>
                 </div>
             </form>
@@ -353,4 +356,12 @@
             <br />
         </div>
     </div>
+
+    {% if post == true %}
+        <script>
+            $(document).ready(function () {
+                $('#post').modal('show')
+            });
+        </script>
+    {% endif %}
 {% endblock %}
