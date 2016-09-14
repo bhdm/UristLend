@@ -18,7 +18,7 @@ class PublicationType extends AbstractType
         $builder
             ->add('title', null, ['label' => 'Название блока'])
             ->add('preview', FileType::class, [ 'label' => 'Картинка', 'data_class' => null, 'required' => false])
-            ->add('body', null, ['label' => 'Контент новости'])
+            ->add('body', null, ['label' => 'Контент новости', 'attr' => ['class' => 'ckeditor']])
         ;
     }
     

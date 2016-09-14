@@ -16,7 +16,7 @@ class ContentType extends AbstractType
     {
         $builder
             ->add('title', null, ['label' => 'Название блока'])
-            ->add('body', null, ['label' => 'Тело блока'])
+            ->add('body', null, ['label' => 'Тело блока', 'attr' => ['class' => 'ckeditor']])
         ;
     }
     

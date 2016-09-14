@@ -66,7 +66,6 @@ class ContentController extends Controller{
         $item = $this->getDoctrine()->getRepository('AppBundle:'.self::ENTITY_NAME)->findOneById($id);
         $form = $this->createForm(ContentType::class, $item);
         $form->add('submit', SubmitType::class, ['label' => 'Сохранить', 'attr' => ['class' => 'btn-primary']]);
-        $oldFile = $item->getPreview();
 
         $formData = $form->handleRequest($request);
 

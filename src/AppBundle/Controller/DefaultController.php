@@ -16,8 +16,13 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
 
+        $contents = $this->getDoctrine()->getRepository('AppBundle:Content')->findAll();
+        $content = [];
+        foreach ($contents as $k => $v){
+            $content[$v->getId()] = $v->getBody();
+        }
         $news = $this->getDoctrine()->getRepository('AppBundle:Publication')->findBy([],['id' => 'DESC'],3);
-        return $this->render('AppBundle:Default:index.html.twig', ['news' => $news]);
+        return $this->render('AppBundle:Default:index.html.twig', ['news' => $news, 'content' => $content]);
     }
 
     /**
