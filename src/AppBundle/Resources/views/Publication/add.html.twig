@@ -15,3 +15,8 @@
         {{ form_end(form) }}
     </div>
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('assets/vendor/ckeditor/ckeditor.js') }}"></script>
+{% endblock %}
