@@ -21,7 +21,7 @@ class DefaultController extends Controller
             $message = \Swift_Message::newInstance()
                 ->setSubject('Запрос сайта')
                 ->setFrom('urist@urist.ru')
-                ->setTo('bhd.m@ya.ru')
+                ->setTo('admin@pristav77.ru')
                 ->setBody(
                     $this->renderView(
                         '@App/registration.html.twig',

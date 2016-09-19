@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" type="text/css" href="src/AppBundle/Resources/public/less/common.less"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <meta name="robots" content="index, follow"/>
@@ -187,7 +188,7 @@
         </div>
 
         <div class="block-3 gradient">
-            <div class="title black text-center">Опасности для должника</div>
+            <div class="title black text-center" style="padding-top: 40px">Опасности для должника</div>
             <div class="row">
                 <div class="col-md-offset-2 col-sm-offset-1 col-xs-12  col-sm-10 col-md-8">
                     {#<ul>#}
@@ -232,7 +233,7 @@
         </div>
         <br />
         <br />
-        <img src="{{ asset('bundles/app/images/big-line-6.png') }}" class="big-line">
+        <img src="{{ asset('bundles/app/images/big-line-6.png') }}" class="big-line" style="margin-top: 40px">
         <br />
         <br />
         <div class="block-5 slider-2">
@@ -248,6 +249,9 @@
                     {#<li>Гарантия качества услуг. Мы гарантируем положительный результат.</li>#}
                     {#</ul>#}
                     {{ content[14] | raw }}
+                    <div class="text-center Bold white subtitle">
+                        Мы помогли более 1000 клиентам списать<br /> долги официально через суд.
+                    </div>
                 </div>
             </div>
             <br />
@@ -351,13 +355,13 @@
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=dg8LmQTzaZJcXKe_HG4la9KvJZdWRiAA&amp;width=100%&amp;height=558&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
         </div>
         <div class="text-center">
-            <img src="{{ asset('bundles/app/images/big-line-9.png') }}" class="big-line" style="margin: 30px; max-width: 220px">
+            <img src="{{ asset('bundles/app/images/big-line-9.png') }}" class="big-line" style="margin: 40px; max-width: 220px">
             <div class="phone">8 <span class="green">495</span> 799 72 93</div>
         </div>
         <div class="block-10 news" id="news">
             {#<img src="{{ asset('bundles/app/images/news-tmp.png') }}" style="max-width: 100%">#}
             <div class="tch"></div>
-            <div class="title green text-center">Новости</div>
+            <div class="title green text-center" style="    padding-top: 0;">Новости</div>
 
             {% for n in news %}
                 <div class="row new-item">

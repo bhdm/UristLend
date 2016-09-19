@@ -88,6 +88,7 @@ ul.nav.navbar-nav {
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
+  padding-top: 40px;
 }
 .black{
   color: #333;
@@ -137,7 +138,7 @@ p{
   padding-bottom: 50px;
 }
 .block-8{
-  padding-top: 30px;
+  //padding-top: 30px;
   padding-bottom: 50px;
 }
 .block-7{
@@ -154,7 +155,7 @@ footer{
 
 textarea, input{
   background: #FFF;
-  border: 1px solid #EEE;
+  border: 1px solid @color-gray;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -175,8 +176,8 @@ ul{
 }
 
 .t-2{
-  background: @color-gray;
-  border: 10px solid @color-gray;
+  background: lighten(@color-gray, 10);
+  border: 10px solid darken(@color-gray, 10);
   padding: 40px 20px;
   width: 60%;
   float: right;
@@ -184,7 +185,7 @@ ul{
 }
 .t-1{
   background: #FFF;
-  border: 10px solid @color-green;
+  border: 10px solid darken(@color-green, 10);
   padding: 40px 20px;
   width: 50%;
   margin-top: 100px;
@@ -192,7 +193,7 @@ ul{
 }
 .t-3{
   background: none;
-  border: 10px solid @color-gray;
+  border: 10px solid darken(@color-gray, 10);
   padding: 40px 20px;
   width: 60%;
   margin-top: -40px;
@@ -201,7 +202,7 @@ ul{
 }
 .t-4{
   background: #FFF;
-  border: 10px solid @color-green;
+  border: 10px solid darken(@color-green, 10);
   padding: 40px 20px;
   width: 30%;
   float: right;
@@ -214,7 +215,7 @@ ul{
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
   background-size: 100%; /* Современные браузеры */
-  height: 700px;
+  height: 725px;
 }
 .img-e{
   width: 64px;
@@ -270,4 +271,10 @@ ul{
 #adrs{
   font-size: 17px;
   color: darken(@color-gray,50);
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
