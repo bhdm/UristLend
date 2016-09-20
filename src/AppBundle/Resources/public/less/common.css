@@ -213,6 +213,7 @@ ul li {
 }
 .slider-2 {
   background: url('/bundles/app/images/slider-2.png') no-repeat;
+  background-color: #478323;
   -moz-background-size: 100%;
   /* Firefox 3.6+ */
   -webkit-background-size: 100%;
@@ -221,7 +222,8 @@ ul li {
   /* Opera 9.6+ */
   background-size: 100%;
   /* Современные браузеры */
-  height: 725px;
+  background-position: bottom;
+  min-height: 725px;
 }
 .img-e {
   width: 64px;
