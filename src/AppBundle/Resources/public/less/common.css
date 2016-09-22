@@ -73,6 +73,7 @@ ul.nav.navbar-nav li {
   text-align: center;
   float: none;
   display: table-cell;
+  border-bottom: 3px solid #FFF;
 }
 ul.nav.navbar-nav li:hover {
   border-bottom: 3px solid #478323;
