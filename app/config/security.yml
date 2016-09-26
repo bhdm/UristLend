@@ -11,7 +11,7 @@ security:
             memory:
                 users:
                     admin:
-                        password: 'admin'
+                        password: '77pristavadmin'
                         roles: 'ROLE_ADMIN'
 
     firewalls:
